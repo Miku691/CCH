@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap demo</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-1" id="numAndAdd">
+                <h3 id="mySlNo">1</h3>
+                <button type="button" class="btn btn-outline-primary" id="myBtn">+</button>
+            </div>
+            <!-- Question Box Starts -->
+            <div class="col-11">
+                <div class="form-floating my-2">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Write Your Question</label>
+                </div>
+            </div>
+            <!-- Question End -->
+        </div>
+
+
+        <!-- 4 Options Starts -->
+        <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">(A)</span>
+            <input id="idOption1" type="text" class="form-control" placeholder="Option 1" aria-label="Username"
+                aria-describedby="addon-wrapping">
+        </div>
+
+        <div class="input-group flex-nowrap my-2">
+            <span class="input-group-text" id="addon-wrapping">(B)</span>
+            <input id="idOption2" type="text" class="form-control" placeholder="Option 2" aria-label="Username"
+                aria-describedby="addon-wrapping">
+        </div>
+
+        <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">(C)</span>
+            <input id="idOption3" type="text" class="form-control" placeholder="Option 3" aria-label="Username"
+                aria-describedby="addon-wrapping">
+        </div>
+
+        <div class="input-group flex-nowrap my-2">
+            <span class="input-group-text" id="addon-wrapping">(D)</span>
+            <input id="idOption4" type="text" class="form-control" placeholder="Option 4" aria-label="Username"
+                aria-describedby="addon-wrapping">
+        </div>
+        <!-- 4 Options Ends -->
+
+        <!-- Correct Answer -->
+        <h6>Select correct Answer</h6>
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" value="1" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+            <label class="btn btn-outline-success" for="btnradio1">(A)</label>
+
+            <input type="radio" value="2" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-success" for="btnradio2">(B)</label>
+
+            <input type="radio" value="3" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-success" for="btnradio3">(C)</label>
+
+            <input type="radio" value="4" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+            <label class="btn btn-outline-success" for="btnradio4">(D)</label>
+        </div>
+        <!-- Correct Answer Ends-->
+
+        <!-- Explanation Box Starts -->
+        <div class="form-floating my-2">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea3"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea3">Explain your Answer (If Required)</label>
+        </div>
+        <!-- Explanation End -->
+
+        <Button class="btn btn-outline-success" id="allSubmit">Add Question</Button>
+
+        <hr>
+        <!-- The text field -->
+        <div class="form-floating my-2">
+            <textarea class="form-control" placeholder="Leave a comment here" id="myInput"
+                style="height: 120px"></textarea>
+            <label for="myInput">Click below 'Copy code' button to copy this</label>
+        </div>
+
+        <!-- The button used to copy the text -->
+        <button onclick="myFunction()" class="btn btn-outline-success my-4">Copy code</button>
+
+
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

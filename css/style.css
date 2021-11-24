@@ -1,0 +1,16 @@
+#numAndAdd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 6.88888%;
+}
+
+#myBtn{
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+
+
