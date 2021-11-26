@@ -13,17 +13,13 @@ let correctAns;
 let userExplanation = document.getElementById('floatingTextarea3');
 let slNo = document.getElementById('mySlNo').innerHTML;
 var copyText = document.getElementById("myInput");
-let checkNum = 1;
+
 
 
 let outputCode = "";
 
 
-intSlNo = parseInt(slNo);
-document.getElementById('myBtn').addEventListener("click", () => {
-    intSlNo = intSlNo + 1;
-    document.getElementById('mySlNo').innerHTML = intSlNo;
-});
+
 
 
 let myMainFunction = () => {
@@ -50,7 +46,7 @@ let myMainFunction = () => {
 
     let myCode = `<div class="wrapper2"> <div class="title2">${intSlNo}) ${enteredQuestion.value}</div><div class="box2"><input type="radio" name="select">${option1}<input type="radio" name="select">${option2}<br><input type="radio" name="select">${option3}<input type="radio" name="select">${option4}</div><center><details class="sumry1"><summary class="mySumry1">View Answer</summary><div class="sumryDiv1"><p class="sumryP1">Ans:- ${correctAns} <br> ${userExplanation.value}</p></div> </details> </center></div>`
 
-    if (intSlNo == checkNum) {
+   
         outputCode = outputCode + myCode;
         copyText.innerHTML = outputCode;
         alert("Question Added Successfully");
@@ -66,10 +62,8 @@ let myMainFunction = () => {
         btn4Correct.checked = false;
         checkNum += 1;
 
-    }
-    else{
-        alert("Increase the question number");
-    }
+    
+    
 }
 
 document.getElementById('allSubmit').addEventListener("click", myMainFunction);
