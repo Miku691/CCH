@@ -60,7 +60,7 @@ let myMainFunction = () => {
         btn2Correct.checked = false;
         btn3Correct.checked = false;
         btn4Correct.checked = false;
-        checkNum += 1;
+        
 
     
     
