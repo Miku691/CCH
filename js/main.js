@@ -1,4 +1,4 @@
-console.log("Hey its working");
+
 let enteredQuestion = document.getElementById('floatingTextarea2');
 let valueOption1 = document.getElementById('idOption1');
 let valueOption2 = document.getElementById('idOption2');
@@ -11,7 +11,7 @@ let btn4Correct = document.getElementById('btnradio4');
 let isCorrect = false;
 let correctAns;
 let userExplanation = document.getElementById('floatingTextarea3');
-let slNo = document.getElementById('mySlNo').innerHTML;
+
 var copyText = document.getElementById("myInput");
 
 
