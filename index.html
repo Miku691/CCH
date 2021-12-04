@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body onload="startLoad()">
 
     <div class="container">
-        
-            
+        <div class="row">
+            <div class="col-1" id="numAndAdd">
+                <h2 id="mySlNo">1</h2>
+            </div>
             <!-- Question Box Starts -->
-            <div>
+            <div class="col-11">
                 <div class="form-floating my-2">
                     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
                         style="height: 100px"></textarea>
@@ -24,7 +26,7 @@
                 </div>
             </div>
             <!-- Question End -->
-        
+        </div>
 
 
         <!-- 4 Options Starts -->
@@ -90,7 +92,7 @@
 
         <!-- The button used to copy the text -->
         <button onclick="myFunction()" class="btn btn-outline-success my-4">Copy code</button>
-
+        <button class="btn btn-outline-danger mx-4" id="claerCode">Clear Code</button>
 
     </div>
 
