@@ -102,7 +102,7 @@ document.getElementById('allSubmit').addEventListener("click", myMainFunction);
 
 // Clearing local Storage
 document.getElementById('claerCode').addEventListener('click', () => {
-    let clearAll = confirm("Do you really want to clear everyting");
+    let clearAll = confirm("Do you really want to clear everything");
     if(clearAll){
         localStorage.clear();
         getLocalStogrageValue = localStorage.getItem("myFinalCode");
