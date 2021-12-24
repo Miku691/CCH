@@ -65,7 +65,7 @@ let myMainFunction = () => {
     }
 
     else{
-        let myCode = `<div class="wrapper2"> <div class="title2">${intSlNo}) ${enteredQuestion.value} ?</div><div class="box2"><input type="radio" name="select">${option1}<input type="radio" name="select">${option2}<br><input type="radio" name="select">${option3}<input type="radio" name="select">${option4}</div><center><details class="sumry1"><summary class="mySumry1">View Answer</summary><div class="sumryDiv1"><p class="sumryP1">Ans:- ${correctAns} <br> ${userExplanation.value}</p></div> </details> </center></div>`
+        let myCode = `<div class="wrapper2"> <div class="title2">${intSlNo}) ${enteredQuestion.value} ?</div><div class="box2"><input type="radio" name="select">${option1}<br><input type="radio" name="select">${option2}<br><input type="radio" name="select">${option3}<br><input type="radio" name="select">${option4}</div><center><details class="sumry1"><summary class="mySumry1">View Answer</summary><div class="sumryDiv1"><p class="sumryP1">Ans:- ${correctAns} <br> ${userExplanation.value}</p></div> </details> </center></div>`
 
         outputCode = outputCode + myCode;
         localStorage.setItem("myFinalCode", outputCode);
